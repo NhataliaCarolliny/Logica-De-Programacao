@@ -14,8 +14,7 @@ programa {
       }
 
       se (veiculo > 2) {
-        multa = 12.89
-        escreva ("Sua multa é de: R$ ", multa*(veiculo-2), "\n")
+        multa = multa+(veiculo - 2)*12.89
         casas++
 
       }

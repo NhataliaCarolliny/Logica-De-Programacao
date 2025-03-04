@@ -12,9 +12,9 @@ programa {
       leia (letra)
 
       se (letra == 'n' ou letra == 'N') {
-        escreva ("Maior velocidade: ")
-        eescreva ("Maior ano: ")
-        escreva ("Média das velocidades: ", mediaVelocidade)
+        escreva ("\nMaior velocidade: ")
+        escreva ("\nMaior ano: ")
+        escreva ("\nMédia das velocidades: ", mediaVelocidade)
         pare
       }
 

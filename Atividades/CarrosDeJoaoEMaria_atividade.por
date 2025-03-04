@@ -21,10 +21,11 @@ programa {
       se (letra == 's') {
        escreva ("Qual a velocidade do carro? ")
        leia (velocidade)
+       somaVelocidade += velocidade
+       contador++
        escreva ("Qual o ano do carro? ")
        leia (ano)
-       mediaVelocidade = (somaVelocidade+velocidade)/contador
-       contador++
+       mediaVelocidade = somaVelocidade/contador
       }
     }
 

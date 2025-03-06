@@ -1,17 +1,16 @@
 programa {
   funcao inicio() {
-    inteiro ano, contador = 0
+    inteiro ano, maiorAno = 0, maiorVelocidade = 0, qntVelocidade = 0
     real velocidade = 0, somaVelocidade = 0, mediaVelocidade = 0
     caracter letra = 's' 'n' 'N'
 
     enquanto (verdadeiro) {
-      inteiro maiorAno = 0, maiorVelocidade = 0
 
-      escreva ("Digite s para iniciar: ")
+      escreva ("\nDigite s para iniciar: ")
       leia (letra)
 
       se (letra == 'n' ou letra == 'N') {
-        mediaVelocidade = somaVelocidade/contador
+        mediaVelocidade = somaVelocidade/qntVelocidade
         escreva ("\nMaior velocidade: ",maiorVelocidade)
         escreva ("\nMaior ano: ", maiorAno)
         escreva ("\nMédia das velocidades: ", mediaVelocidade)
@@ -22,14 +21,18 @@ programa {
        escreva ("Qual a velocidade do carro? ")
        leia (velocidade)
        somaVelocidade += velocidade
-       contador++
-       maiorVelocidade = velocidade
-       maiorVelocidade++
+       qntVelocidade++
        escreva ("Qual o ano do carro? ")
        leia (ano)
-       maiorAno = ano
-       maiorAno++
        
+      }
+
+      se (velocidade > maiorVelocidade) {
+        maiorVelocidade = velocidade
+      }
+      
+      se (ano > maiorAno) {
+        maiorAno = ano
       }
     }
   }

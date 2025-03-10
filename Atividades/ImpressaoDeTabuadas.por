@@ -7,12 +7,12 @@ programa {
     escreva ("Informe o número da segunda tabuada: ")
     leia (n2)
 
-    para (inteiro i = n1; i <= 9; i++) {
-      escreva ("\n", n1, " X ", i, " = ", i*n1)
-      escreva ("\n")
-     para (inteiro j = n2; j <= 9; j++) {
-      escreva ("\n", n2, " X ", j, " = ", j*n2)
+    para (inteiro i = n1; i <= n2; i++) {
+     para (inteiro j = 1; j <= 9; j++) {
+      escreva ("\n", i, " X ", j, " = ", i*j)
      }
+     escreva ("\n")
     }
+    
   }
 }

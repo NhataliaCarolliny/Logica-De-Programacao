@@ -1,19 +1,18 @@
 programa {
   funcao inicio() {
-    inteiro numero1, numero2, contador = 1, contador2 = 1
+    inteiro n1, n2
 
-    escreva ("Digite o primeiro número: ")
-    leia (numero1)
-    escreva ("Digite o segundo número: ")
-    leia (numero2)
+    escreva ("Informe o número da primeira tabuada: ")
+    leia (n1)
+    escreva ("Informe o número da segunda tabuada: ")
+    leia (n2)
 
-    enquanto (contador <= 9) {
-      escreva ("\n", numero1, " X ", contador, " = ", (numero1*contador))
-      contador++
-      }
-    enquanto (contador2 <= 9) {
-     escreva ("\n", numero2, " X ", contador2, " = ", (numero2*contador2))
-     contador2++
+    para (inteiro i = n1; i <= 9; i++) {
+      escreva ("\n", n1, " X ", i, " = ", i*n1)
+      escreva ("\n")
+     para (inteiro j = n2; j <= 9; j++) {
+      escreva ("\n", n2, " X ", j, " = ", j*n2)
      }
     }
   }
+}

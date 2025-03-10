@@ -11,5 +11,9 @@ programa {
       escreva ("\n", numero1, " X ", contador, " = ", (numero1*contador))
       contador++
       }
+    enquanto (contador2 <= 9) {
+     escreva ("\n", numero2, " X ", contador2, " = ", (numero2*contador2))
+     contador2++
+     }
     }
   }

@@ -31,7 +31,7 @@ programa {
     expoente2 = 2
     resultado2 = mat.potencia(base2, expoente2)
 
-    distancia = mat.raiz_quadrada((resultado1)+(resultado2))
+    distancia = mat.raiz((resultado1), 2) + mat.raiz((resultado2), 2)
 
     escreva ("A distância entre o ponto A e o ponto B é de: ", distancia)
   }

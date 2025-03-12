@@ -1,6 +1,6 @@
 programa {
   funcao inicio() {
-    inteiro correspondencias, contador= 0, i = 0
+    inteiro correspondencias, contador = 0, i = 0
     real media = 0, somaCorrespondencias = 0
 
     enquanto (i < 7) {

@@ -11,7 +11,7 @@ programa {
       escreva ("Qual o preço na promoção de Black Friday? ")
       leia (precoPromocional)
 
-      se (precoOriginalComDesconto <= precoPromocional) {
+      se (precoPromocional <= precoOriginalComDesconto) {
         contador++
       }
     }

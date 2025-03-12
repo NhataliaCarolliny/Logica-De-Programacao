@@ -16,11 +16,11 @@ programa {
 
     real pi = 3.14, volume1, volume2, volume3
 
-    volume1 = (4/3)*pi*(raioEsfera1*raioEsfera1*raioEsfera1)
+    volume1 = (4*pi*(raioEsfera1*raioEsfera1*raioEsfera1))/3
 
-    volume2 = (4/3)*pi*(raioEsfera2*raioEsfera2*raioEsfera2)
+    volume2 = (4*pi*(raioEsfera2*raioEsfera2*raioEsfera2))/3
 
-    volume3 = (4/3)*pi*(raioEsfera3*raioEsfera3*raioEsfera3)
+    volume3 = (4*pi*(raioEsfera3*raioEsfera3*raioEsfera3))/3
 
     escreva ("\nVolume da 1º esfera: ", volume1, "\n")
     escreva ("Volume da 2º esfera: ", volume2, "\n")

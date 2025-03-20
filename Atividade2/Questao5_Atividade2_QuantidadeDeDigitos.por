@@ -1,20 +1,20 @@
 programa {
   funcao inicio() {
 
-    inteiro n, digito
+    inteiro n, digito, i = 0
 
     escreva ("Qual o número? ")
     leia (n)
 
-    para (inteiro i = 0; i < 1; i++) {
-
-    digito = n / 10
+    enquanto (verdadeiro) {
     n = n / 10
 
-    se (digito % n >= 0) {
+    se (n / 10 == 0) {
     i++
     escreva (i)
+    pare
     }
+    i++
     }
   }
 }

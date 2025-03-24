@@ -1,25 +1,20 @@
 programa {
   funcao inicio() {
-    inteiro numero, i = 0
 
-    enquanto (verdadeiro) {
-
+    verificacao (0, 0, 0, 0)
+  }
+  funcao inteiro verificacao (inteiro numeroPar,inteiro numeroImpar,inteiro numeroPositivo,inteiro numeroNegativo) {
+    inteiro numero
     escreva ("Digite o número: ")
     leia (numero)
-    i++
-    }
-    verificacao (numero)
-  }
-  funcao inteiro verificacao (inteiro numero) {
-    inteiro numeroPar = 0, numeroImpar = 0, numeroPositivo = 0, numeroNegativo = 0, i = 0
+    //se aninhado
 
-    enquanto (verdadeiro) {
     se (numero == 0) {
       escreva ("\nQuantidade de número par: ", verificacao(numeroPar), "\n")
       escreva ("\nQuantidade de número impar: ", verificacao(numeroImpar), "\n")
       escreva ("\nQuantidade de número positivo: ", verificacao(numeroPositivo), "\n")
       escreva ("\nQuantidade de número negativo: ", verificacao(numeroNegativo), "\n")
-      pare
+      retorne
     }
     se (numero % 2 == 0) {
       retorne numeroPar++
@@ -27,13 +22,11 @@ programa {
     se (numero % 2 == 1) {
      retorne numeroImpar++
     }
-    se (numero >= 0) {
+    se (numero > 0) {
      retorne numeroPositivo++
     }
     se (numero < 0) {
      retorne numeroNegativo++
-    }
-    i++
     }
   }
 }

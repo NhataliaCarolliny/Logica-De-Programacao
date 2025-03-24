@@ -33,13 +33,6 @@ programa {
     se (numero < 0) {
      retorne numeroNegativo++
     }
-    se (numero == 0) {
-    escreva ("\nQuantidade de número par: ", verificacao(numeroPar), "\n")
-    escreva ("\nQuantidade de número impar: ", verificacao(numeroImpar), "\n")
-    escreva ("\nQuantidade de número positivo: ", verificacao(numeroPositivo), "\n")
-    escreva ("\nQuantidade de número negativo: ", verificacao(numeroNegativo), "\n")
-    pare
-    }
     i++
     }
   }

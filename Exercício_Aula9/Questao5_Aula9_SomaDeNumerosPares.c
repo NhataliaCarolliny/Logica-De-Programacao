@@ -11,5 +11,5 @@ int main() {
             somaNumeros += i;
         }
     }
-    printf("Soma dos pares de 1 até %d: %d", numero, somaNumeros );
+    printf("Soma dos pares de 1 até %d: %d", numero, somaNumeros);
 }

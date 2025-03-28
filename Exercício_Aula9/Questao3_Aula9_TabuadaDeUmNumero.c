@@ -2,7 +2,7 @@
 int main() {
     int numero;
 
-    printf("De qual número voce quer sabe a tabuada? ");
+    printf("De qual número voce quer saber a tabuada? ");
     scanf("%d", &numero);
 
     for(int i = 0; i <= 10; i++) {

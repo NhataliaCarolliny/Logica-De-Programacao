@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 int main() {
     char palavra[20];
     int contadorVogais = 0, contadorConsoante = 0;

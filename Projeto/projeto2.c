@@ -102,7 +102,11 @@ void removerAluno(aluno alunos[]) {
     int res = buscarAluno(alunos, matricula);
 
     if(res != -1){
-        
+        for(int i = 0; i < qntAlunos; i++) {
+            if(alunos[i].matricula == matricula) {
+            qntAlunos--;
+            }  
+        }
         printf("\nAluno removido!\n");
     }
     else{

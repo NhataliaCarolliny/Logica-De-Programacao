@@ -75,7 +75,7 @@ void mediaAluno(aluno alunos[]) {
         printf("Media: %.2f\n", mediaNotas);
     }
     else{
-        printf("Aluno nao encontrado.");
+        printf("Aluno nao encontrado.\n");
     }
 }
 
@@ -103,8 +103,7 @@ void removerAluno(aluno alunos[]) {
 
     if(res != -1){
         for(int i = res; i < qntAlunos-1; i++) {
-            if(alunos[i].matricula == matricula) {
-                alunos[i] = alunos[i+1];
+             alunos[i] = alunos[i+1];
             }
         }
         qntAlunos--;  
